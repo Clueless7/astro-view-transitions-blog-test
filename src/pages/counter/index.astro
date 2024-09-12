@@ -1,8 +1,10 @@
 ---
-import ReactCounter from "../../components/ReactCounter";
+import ReactCounter from "../../components/Counter/ReactCounter.jsx";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import SvelteCounter from "../../components/Counter/SvelteCounter.svelte"
 ---
 
 <BaseLayout>
-  <ReactCounter client:visible />
+  <ReactCounter client:load />
+  <SvelteCounter client:load />
 </BaseLayout>
