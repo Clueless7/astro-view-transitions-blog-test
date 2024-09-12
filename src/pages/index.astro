@@ -5,7 +5,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="Home" description="Home page of Yow!">
-	<div style="background-color: #323232;">
+	<div class="container">
 		<Title />
 
 		<p>Home page of Yow!</p>
@@ -15,3 +15,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 		</div>
 	</div>
 </BaseLayout>
+
+<style>
+	.container {
+		background-color: #f1f1f1;
+	}
+</style>
