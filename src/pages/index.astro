@@ -1,0 +1,17 @@
+---
+import Dog from "../components/Dog.astro";
+import Title from "../components/Title.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Home" description="Home page of Yow!">
+	<div style="background-color: #323232;">
+		<Title />
+
+		<p>Home page of Yow!</p>
+
+		<div style="width: fit-content;">
+			<Dog />
+		</div>
+	</div>
+</BaseLayout>

@@ -1,0 +1,15 @@
+---
+import Dog from "../components/Dog.astro";
+import Title from "../components/Title.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="about" description="About page of Yow!">
+  <p>About page</p>
+
+  <Title />
+
+	<div style="width: 500px;">
+		<Dog />
+	</div>
+</BaseLayout>

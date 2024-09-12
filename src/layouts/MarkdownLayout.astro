@@ -1,0 +1,26 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+
+type FrontMatter = {
+  title: string
+  description?: string
+}
+
+interface Props {
+  frontmatter: FrontMatter
+}
+
+const { frontmatter } = Astro.props
+const { title, description } = frontmatter
+---
+
+<html>
+  <head>
+    <BaseHead title={title} description={description} />
+  </head>
+  <body>
+    <p>markdown layout</p>
+
+    <slot />
+  </body>
+</html>
